@@ -1,0 +1,275 @@
+/* ---------- Assignment5 CSS ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+/* ---------- Layout ---------- */
+#wrap {
+  background-color: lightgrey;
+}
+#header {
+  height: 10vw;
+  min-height: 100px;
+  background-color: #37003c;
+  text-align: center;
+}
+#content {
+  background-color: lightgrey;
+}
+#footer {
+  height: 100px;
+  background-color: #37003c;
+}
+
+/* ---------- container ---------- */
+.container {
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+}
+#content .container {
+  background-color: whitesmoke;
+}
+
+/* ---------- header --------- */
+#header h1 {
+  color: white;
+  font-size: 4vw;
+  font-size: calc(30px + 1.5vw);
+  line-height: 10vw;
+}
+#header #pl-logo {
+  height: 10vw;
+  min-height: 100px;
+  width: auto;
+  object-fit: cover;
+  float: left;
+}
+#header #space {
+  height: calc(10vw - 50px);
+  min-height: 50px;
+}
+
+/* ---------- content --------- */
+/* index.html login form */
+#login {
+  width: 50%;
+  height: 400px;
+}
+
+/* nav */
+#nav #nav-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  background-color: #37003c;
+  color: white;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  vertical-align: bottom;
+}
+#nav #nav-grid .box {
+  border-right: 0.5px solid white;
+  border-top: 0.5px solid white;
+  color: white;
+  font-size: calc(10px + 0.5vw);
+}
+#nav #nav-grid .box1 {
+  border-left: 0.5px solid white;
+}
+#nav #nav-grid a {
+  text-decoration: none;
+}
+#nav #nav-grid a :hover {
+  background-color: white;
+  color: #37003c;
+}
+#nav #signout {
+  background-color: #37003c;
+  border: none;
+  color: white;
+  width: 100%;
+  height: 50px;
+  font-size: calc(10px + 0.5vw);
+}
+#nav #signout:hover {
+  background-color: white;
+  color: #37003c;
+}
+
+/* welcome */
+#welcome-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  background-color: whitesmoke;
+}
+#welcome-grid #official {
+  border-radius: 10px;
+}
+#welcome-grid .box {
+  margin: 1%;
+  border-radius: 10px;
+  height: 300px;
+}
+#welcome-grid .box2 {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  padding: 1%;
+}
+#welcome-grid #usertable {
+  margin: 0 auto;
+  border-collapse: collapse;
+  text-align: center;
+  width: 80%;
+  height: auto;
+  font-size: calc(10px + 0.8vw);
+  margin-top: 20px;
+}
+#welcome-grid a {
+  text-decoration: none;
+  color: #37003c;
+  font-size: calc(15px + 1vw);
+  text-align: center;
+}
+#welcome-grid #official:hover {
+  opacity: 0.5;
+}
+#welcome-grid #official {
+  background-image: url(/img/referee.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+  filter: brightness(80%);
+}
+#welcome-grid #official #text {
+  color: white;
+  line-height: 300px;
+  font-size: large;
+  font-weight: bold;
+  filter: brightness(100%);
+}
+
+/* Week News */
+#weeknews {
+  background-color: #37003c70;
+  margin: 0.5%;
+  border-radius: 10px;
+  text-align: center;
+}
+#weeknews #weeknews-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+}
+#weeknews-grid .box {
+  border-radius: 10px;
+  background-color: #37003c;
+  margin: 2%;
+}
+#weeknews-grid .box:hover {
+  transform: scale(1.1, 1.1);
+}
+#weeknews-grid .box .articleimage {
+  max-width: 100%;
+  border-radius: 10px;
+}
+#weeknews-grid .box .article {
+  color: white;
+}
+/* tables */
+#table-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+#table-grid .box {
+  background-color: white;
+  margin: 1%;
+  color: #37003c;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #37003c1f;
+  padding: 1%;
+}
+#table-grid #leaguehere, #table-grid #statshere {
+  border-collapse: collapse;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  font-size: calc(10px + 0.5vw);
+}
+#table-grid #leaguehere {
+  height: 95%;
+}
+#table-grid th, #table-grid td {
+  border: 1px solid #37003c;
+}
+
+#social-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  height: 100px;
+}
+
+/* ---------- footer --------- */
+#footer {
+  color: white;
+  font-size: calc(15px + 0.8vw);
+}
+#footer p {
+  line-height: 100px;
+  text-align: center;
+}
+
+@media screen and (min-width: 701px) and (max-width: 1200px) {
+  #table-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  #weeknews #weeknews-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+  #welcome-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  #welcome-grid .box1 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  #welcome-grid .box2 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  
+  #weeknews #weeknews-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  #table-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  #table-grid #leaguehere {
+    height: 90%;
+  } 
+}
